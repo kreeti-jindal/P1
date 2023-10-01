@@ -22,11 +22,28 @@
         margin:0px;
         padding:0px;
         background-size: cover;
-        background-image: url(./Assets/img/bg6.jpg);
         background-repeat: no-repeat;
-        overflow: visible; 
+        animation: change 35s infinite ease-in-out; 
         
     }
+
+    @keyframes change 
+{
+    0%
+    {
+        background-image: url(./Assets/img/bg4.jpg);
+    }
+    50%
+    {
+        background-image: url(./Assets/img/bg2.jpg);
+    }
+    100%
+    {
+        background-image: url(./Assets/img/bg3.jpg);
+    }
+
+}
+
     .left{
          display: inline-block;
          position: absolute;
